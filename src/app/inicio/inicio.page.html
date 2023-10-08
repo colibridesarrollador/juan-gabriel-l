@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="personalizado">
+    
+    <ion-title class="inicio">Inicio</ion-title>
+    
+  </ion-toolbar>
+  <h1 class="nombre">{{titulo}}</h1>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+      <ion-button class="exit">Exit</ion-button>
+    </ion-toolbar>
+  </ion-header>
+  <div class="fondo">
+    
+    <ion-button [routerLink]="['/info']" class="btn">
+      Información
+    </ion-button>
+    
+    <ion-button [routerLink]="['/tabs']" class="btn">
+      Juegos
+    </ion-button>
+  </div>
+  </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

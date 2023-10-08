@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" icon="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Carreras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-list>
+      <!-- Primer elemento de la lista -->
+      <ion-item (click)="showToast('SpeedUp seleccionado', itemSeleccionado1)">
+        <ion-avatar slot="start">
+          <ion-img src="https://pixelmaniacos.com/wp-content/uploads/2021/04/speedup_banner.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>SpeedUp</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado1"></ion-checkbox>
+      </ion-item>
+
+      <!-- Segundo elemento de la lista -->
+      <ion-item (click)="showToast('Slipstream seleccionado', itemSeleccionado2)">
+        <ion-avatar slot="start">
+          <ion-img src="https://album.mediaset.es/eimg/2023/07/04/slipstream_ca1a.jpg?w=800"></ion-img>
+        </ion-avatar>
+        <ion-label>Slipstream</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado2"></ion-checkbox>
+      </ion-item>
+
+      <!-- Tercer elemento de la lista -->
+      <ion-item (click)="showToast('Out-Run seleccionado', itemSeleccionado3)">
+        <ion-avatar slot="start">
+          <ion-img src="https://www.tuningblog.eu/wp-content/uploads/2023/03/Out-Run.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Out-Run</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado3"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-content>
