@@ -27,7 +27,7 @@ export class Tab2Page {
     {
       title: 'Mortal Combat',
       videoUrl: 'https://www.youtube.com/watch?v=lW7r2w8SsN0',
-      imageUrl: 'https://s3.crackedcdn.com/phpimages/article/8/2/4/711824_1440x440.webp?v=3',
+      imageUrl: 'https://2.bp.blogspot.com/_Q48uhhzm_w4/TBgASYmqyAI/AAAAAAAAB9Q/3SWg9YFJ1M4/s1600/mortalkombat1.jpg',
       description: '"Mortal Kombat" es una serie de videojuegos de lucha con violencia extrema y personajes icónicos desde 1992.',
       externalLink: 'https://www.minijuegos.com/juego/mortal-kombat',
     },

@@ -1,29 +1,30 @@
-<ion-header [translucent]="true" >
-  <ion-toolbar class="toolbar" >
+<ion-header [translucent]="true" class="header-with-background">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/inicio" icon="arrow-back-circle-outline"></ion-back-button>
     </ion-buttons>
-    <ion-title class="info">Información</ion-title>
+    <ion-title class="titulo">Información</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true" >
-  <div class="autor" >
-      <p>Nombre: {{nombre}}</p><br>
-      <p>Apellidos: {{apellidos}}</p><br>
-      <p>{{informacion}}</p><br>
-      <p>Versión: {{version}} </p>
-      <p>Fecha Versión: {{fechaCreacion}} </p>
-      <p>Descripción: {{descripcion}}</p>
-    </div>
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">informacion</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    </ion-content>
-    
-    <ion-footer>
-      <ion-toolbar >
-        <ion-title style="margin-left: 10%; color: blue;">RetroGame Connect</ion-title>
-      </ion-toolbar>
-    </ion-footer>
+<ion-content [fullscreen]="true">
+  <div class="descripcion"><br><br><br>
+    <p>Nombre: {{nombre}}</p>
+    <p>Apellidos: {{apellidos}}</p>
+    <p>{{informacion}}</p>
+    <p>Versión: {{version}}</p>
+    <p>Fecha Versión: {{fechaCreacion}}</p>
+    <p>Descripción: {{descripcion}}</p>
+  </div>
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Información</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-title class="custom-footer-title">RetroGame Connect</ion-title>
+  </ion-toolbar>
+</ion-footer>

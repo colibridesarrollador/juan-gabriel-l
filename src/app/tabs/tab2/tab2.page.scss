@@ -1,8 +1,32 @@
-
-.content{
-    background-color: rgb(140, 176, 246);
+.content {
+    --ion-background-color: rgb(72, 123, 226);
 }
-.cabecera{
+.cabecera {
     background-color: blue;
-    color: grey;
+}
+.card {
+    background-color: rgb(140, 140, 223);
+}
+.card-header {
+    color: rgb(235, 225, 225);
+}
+.card-content {
+    background-color: rgb(73, 106, 176);
+}
+
+.description {
+    margin-left: 2px;
+    border-radius: 1%;
+    background-color: rgb(194, 194, 236);
+    color: rgb(174, 48, 48);
+}
+
+.card-footer {
+    background-color: rgb(70, 70, 112);
+}
+ion-header{
+    --ion-background-color: blue;
+}
+*{
+    opacity: 97%;
 }

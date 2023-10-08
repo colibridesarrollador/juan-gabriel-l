@@ -1,15 +1,20 @@
-.info{
-    margin-left: 20%;
-    color: rgb(128, 127, 127);
-}
-div.autor{
-    margin-top: 80px;
+ion-toolbar {
+    --ion-background-color: red;
+    color: rgb(11, 11, 244);
+}  
+
+.descripcion {    
     background-image: url("https://i.blogs.es/2993ee/consola-02/1024_2000.webp");
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
-.autor > p {
-    color: white;
-    margin-left: 40px;
-    margin-top: 1px;
+    p {
+        color: white;
+        margin-left: 40px;
+        margin-top: 0px;
+}
+
+
+ion-toolbar{
+    --ion-background-color: red;
 }

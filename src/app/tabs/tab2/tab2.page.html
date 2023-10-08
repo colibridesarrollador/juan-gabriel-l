@@ -1,39 +1,49 @@
-<ion-header [translucent]="true" >
-  <div class="cabecera">
-    <ion-toolbar>
-      <ion-buttons slot="start" >
-        <ion-back-button defaultHref="/inicio" icon="home"></ion-back-button>
-      </ion-buttons>
-      <ion-title>Luchas</ion-title>
-    </ion-toolbar>
-  </div>
+<ion-header [translucent]="true" class="cabecera">
+  <ion-toolbar style="color: red;">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" icon="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Luchas</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content >
-  <ion-card *ngFor="let card of cards">
-    <ion-card-header style="background-color: rgb(140, 140, 223)">
-      <ion-card-title style="color: rgb(235, 225, 225)">{{ card.title }}</ion-card-title>
+<ion-content class="content">
+  <ion-card *ngFor="let card of cards" class="card">
+    <ion-card-header class="card-header">
+      <ion-card-title>{{ card.title }}</ion-card-title>
     </ion-card-header>
-    <ion-card-content style="background-color: rgb(73, 106, 176)">
+    <ion-card-content class="card-content">
       <!-- Video de YouTube -->
-      <iframe
-        width="100%"
-        height="315"
-        [src]="getSafeYouTubeEmbedUrl(card.videoUrl)"></iframe>
+      <iframe width="100%" height="315" [src]="getSafeYouTubeEmbedUrl(card.videoUrl)"></iframe>
       <!-- Descripción -->
-      <p style=" border-radius: 7%;background-color: rgb(194, 194, 236);color: rgb(198, 52, 52);">
-        {{ card.description }}
-      </p>
+      <p class="description">{{ card.description }}</p>
       <!-- Imagen de respaldo  -->
-      <img style="border-radius: 7%"*ngIf="card.imageUrl"[src]="card.imageUrl"alt=""width="100%"height="315" />
+      <img *ngIf="card.imageUrl" [src]="card.imageUrl" alt="" width="100%" height="315" />
     </ion-card-content>
-    <ion-row style="background-color: rgb(70, 70, 112);">
+    <ion-row class="card-footer">
       <ion-col size="2">
         <!-- Enlace externo en una nueva ventana del navegador -->
-        <a [href]="card.externalLink" target="">
-          <ion-button style="border-radius: 7%;color: rgba(248, 241, 241, 0.812);  margin-left: 90px; ">Jugar</ion-button>
+        <a [href]="card.externalLink" target="_blank">
+          <ion-button>Jugar</ion-button>
         </a>
       </ion-col>
     </ion-row>
   </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="./tab3" style="color: blue;">
+          <ion-icon name="game-controller-outline"></ion-icon>
+          Plataformas
+        </ion-tab-button>
+        <ion-tab-button tab="./tab1" style="color: blue;">
+          <ion-icon name="car-sport-outline"></ion-icon>
+          Carreras
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar> 
+</ion-footer>

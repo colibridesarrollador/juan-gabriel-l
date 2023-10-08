@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  titulo: string = "RetroGame Connect"
+  titulo: string = "RetroGame"
   constructor() { }
 
   ngOnInit() {
