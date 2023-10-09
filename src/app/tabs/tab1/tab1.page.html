@@ -14,12 +14,23 @@
         <img [src]="item.image" alt="Avatar">
       </ion-avatar>
       <ion-label>{{ item.text }}</ion-label>
-      <ion-checkbox [(ngModel)]="item.checked" (ionChange)="showToast(item)"></ion-checkbox>
+      <ion-checkbox [(ngModel)]="item.checked" (ionChange)="mostrarTarjeta(item)"></ion-checkbox>
+
+      <ion-card *ngIf="item.mostrarTarjeta">
+        <img [src]="item.imagenTarjeta" alt="Imagen de {{ item.text }}">
+        <ion-card-content>
+          <p>{{ item.descripcion }}</p>
+          
+          <ion-button (click)="irAURL(item.url)">Jugar</ion-button>
+        </ion-card-content>
+      </ion-card>
     </ion-item>
   </ion-list>
 </ion-content>
+
+
 <ion-footer>
   <ion-toolbar>
-    
+
   </ion-toolbar> 
 </ion-footer>
