@@ -8,45 +8,29 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content [fullscreen]="true">
-    <ion-list>
-      <!-- Primer elemento de la lista -->
-      <ion-item (click)="showToast('SpeedUp seleccionado', itemSeleccionado1)">
-        <ion-avatar slot="start">
-          <ion-img src="https://pixelmaniacos.com/wp-content/uploads/2021/04/speedup_banner.jpg"></ion-img>
-        </ion-avatar>
-        <ion-label>SpeedUp</ion-label>
-        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado1"></ion-checkbox>
-      </ion-item>
-
-      <!-- Segundo elemento de la lista -->
-      <ion-item (click)="showToast('Slipstream seleccionado', itemSeleccionado2)">
-        <ion-avatar slot="start">
-          <ion-img src="https://album.mediaset.es/eimg/2023/07/04/slipstream_ca1a.jpg?w=800"></ion-img>
-        </ion-avatar>
-        <ion-label>Slipstream</ion-label>
-        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado2"></ion-checkbox>
-      </ion-item>
-
-      <!-- Tercer elemento de la lista -->
-      <ion-item (click)="showToast('Out-Run seleccionado', itemSeleccionado3)">
-        <ion-avatar slot="start">
-          <ion-img src="https://www.tuningblog.eu/wp-content/uploads/2023/03/Out-Run.jpg"></ion-img>
-        </ion-avatar>
-        <ion-label>Out-Run</ion-label>
-        <ion-checkbox slot="end" [(ngModel)]="itemSeleccionado3"></ion-checkbox>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name=""></ion-icon> 
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="https://lh6.googleusercontent.com/-Xf-YiKig5E4/TkU1ho6q0rI/AAAAAAAADHY/rTbSOA0aXmg/s800/outrun_logo.jpg"></ion-img> <!-- Reemplaza "URL-de-la-imagen" con la URL de tu imagen opcional -->
+      <p>Out Run</p>
+      <ion-button expand="full" href="https://www.minijuegos.com/juego/out-run-retro">Jugar</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    
-    
-  </ion-toolbar> 
-</ion-footer>
+
+<div class="centrado">
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-button href="https://www.minijuegos.com/juego/micro-machines">Micro Machines</ion-button>
+
+    <ion-button href="https://www.minijuegos.com/juego/speed-trucks">Speed Trucks</ion-button>
+
+    <ion-button href="https://www.minijuegos.com/juego/crash-drive-2">Crash Drive II</ion-button>
+  </ion-fab-list>
+</ion-fab>
+</div>

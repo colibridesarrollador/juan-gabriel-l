@@ -14,16 +14,12 @@
       <ion-card-title>{{ card.title }}</ion-card-title>
     </ion-card-header>
     <ion-card-content class="card-content">
-      <!-- Video de YouTube -->
       <iframe width="100%" height="315" [src]="getSafeYouTubeEmbedUrl(card.videoUrl)"></iframe>
-      <!-- Descripción -->
       <p class="description">{{ card.description }}</p>
-      <!-- Imagen de respaldo  -->
       <img *ngIf="card.imageUrl" [src]="card.imageUrl" alt="" width="100%" height="315" />
     </ion-card-content>
     <ion-row class="card-footer">
       <ion-col size="2">
-        <!-- Enlace externo en una nueva ventana del navegador -->
         <a [href]="card.externalLink" target="_blank">
           <ion-button>Jugar</ion-button>
         </a>
@@ -32,8 +28,3 @@
   </ion-card>
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-
-  </ion-toolbar> 
-</ion-footer>

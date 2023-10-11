@@ -1,15 +1,15 @@
 .fondo {
     background-image: url("https://img.ecartelera.com/noticias/72900/72904-h6.jpg");
-    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-size: cover; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
 ion-button:hover {
-    background-color: var(--ion-color-primary); /* Color de fondo al pasar el mouse por encima */
+    background-color: var(--ion-color-primary); 
 }
 .inicio {
-    text-align: center; /* Centra horizontalmente el texto */
+    text-align: center; 
     color: rgb(250, 250, 252);
     font-size: 20px;
 }
